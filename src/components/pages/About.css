@@ -211,18 +211,18 @@
   /* Nav & Footer */
   
   a {
-    color: #000000;
-    text-decoration: none;
-    background-color: transparent;
+    color: #000000 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
   }
   
   a:hover {
-    color: #000000;
-    text-decoration: none;
+    color: #000000 !important;
+    text-decoration: none !important;
   }
   
   a:active {
-      outline: none;
+      outline: none !important;
     }
   
   .nav {

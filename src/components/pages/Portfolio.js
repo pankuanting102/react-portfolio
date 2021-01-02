@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
 import arrow from "../Assets/arrow@2x.png";
+import d1Video from "../Assets/influencer-search-header.mp4";
+import d1Img from "../Assets/index-portfolio-influencer@2x.jpg";
 
 let styles = {
   margin: "10px",
@@ -10,6 +12,7 @@ let color = {
   backgroundColor: "#ffdede"
 }
 function Portfolio() {
+  
   return (
     <div>
     <div className="filter-group">
@@ -18,6 +21,28 @@ function Portfolio() {
     <div id="dev-filter" className="btn" style={styles}>Dev</div>
   </div>
 <div className="container-fluid">
+<div className="row dev">
+        <div className="col col-lg-12 pl-0 pr-0">
+          <a href="/kuan-ting-pan-portfolio/project-findinfluencer">
+          <video loop muted autoPlay className="img-bg">
+            <source
+              src={d1Video}
+              type="video/mp4"
+            />
+          </video>
+          <img
+            src={d1Img}
+            className="img-bg-touch-devices"
+          />
+          <div className="dev-badge">DEV</div>
+          <div className="portfolio-title">FindInfluencer.</div>
+          <btn className="portfolio-cta">View Project <img src={arrow} class="arrow-cta"
+            />
+          </btn>
+        </a>
+        </div>
+        </div>
+
         <div className="row dev">
        
         <div className="col col-lg-6 col-md-6 col-sm-12 col-12 pl-0">
@@ -80,8 +105,12 @@ function Portfolio() {
       </div>
       </div>
       </div>
+      
+      
   );
+  
 }
+
 
 
 export default Portfolio;
