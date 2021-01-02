@@ -23,7 +23,7 @@ function Portfolio() {
 <div className="container-fluid">
 <div className="row dev">
         <div className="col col-lg-12 pl-0 pr-0">
-          <a href="/kuan-ting-pan-portfolio/project-findinfluencer">
+          <a href="/findinfluencer">
           <video loop muted autoPlay className="img-bg">
             <source
               src={d1Video}
