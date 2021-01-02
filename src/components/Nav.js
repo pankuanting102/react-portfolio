@@ -1,41 +1,30 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import { ReactComponent as Logo } from "./Assets/nav_logo.svg";
+import "./Nav.css";
 function Nav() {
   const location = useLocation();
 
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-          Home
-        </Link>
+    <nav>
+    <ul className="p">
+      <Link to="/">
+        <Logo className={"rotating svg"} />
+      </Link>
+
+      <li class="li-logo">Hello, There</li>
+  
+      <li class="nav-right">
+        <Link to="/portfolio">Portfolio</Link>
       </li>
-      <li className="nav-item">
-        <Link
-          to="/about"
-          className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
-        >
-          About
-        </Link>
+      <li class="nav-right">
+        <Link to="/contact">Contact</Link>
       </li>
-      <li className="nav-item">
-        <Link
-          to="/portfolio"
-          className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}
-        >
-          Portfolio
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/contact"
-          className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
-        >
-          Contact
-        </Link>
+      <li class="nav-right">
+        <Link to="/about">About</Link>
       </li>
     </ul>
+    </nav>
   );
 }
 
