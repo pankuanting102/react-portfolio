@@ -76,7 +76,7 @@ function Contact() {
           ></textarea>
         </div>
       </div>
-      <input type="submit" className="btn" Submit />
+      <div type="submit" className="btn" > Submit </div>
 
       <div style={styles} className="thankyou_message">
         <p>Thanks for contacting!</p>
