@@ -10,18 +10,21 @@ function Nav() {
     <ul className="p">
       <Link to="/">
         <Logo className={"rotating svg"} />
+        
       </Link>
 
-      <li class="li-logo">Hello, There</li>
-  
-      <li class="nav-right">
-        <Link to="/portfolio">Portfolio</Link>
-      </li>
-      <li class="nav-right">
+      
+      <li className="li-logo">Hello, There</li>
+    
+      <li className="nav-right">
         <Link to="/contact">Contact</Link>
       </li>
-      <li class="nav-right">
+      <li className="nav-right">
         <Link to="/about">About</Link>
+      </li>
+
+      <li className="nav-right">
+        <Link to="/portfolio">Portfolio</Link>
       </li>
     </ul>
     </nav>

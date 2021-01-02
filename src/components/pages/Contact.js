@@ -1,23 +1,87 @@
 import React from "react";
+import "./About.css";
+let styles = {
+  display: "none",
+  marginTop: "10px",
+  height: "250px",
+};
 
+let height = {
+  height: "250px",
+};
 
-function Contact(props) {
+function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-        Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-        pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-        tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
-        metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
-        Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
-        torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
-        Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <form
+      method="post"
+      action="https://script.google.com/macros/s/AKfycbznE7mqFUfLuXiTyqTeQ_xDZnZ2bMs3h0ciYcad6g/exec"
+      className="container-fluid p gform"
+    >
+      <div class="row">
+        <div className="form-row">
+          <div className="form-group col-md-12">Thoughts? Let's Connect!</div>
+        </div>
+        <div className="form-row">
+          <div className="form-group col-md-4 col-sm-12 col-lg-4 col-12">
+            <input
+              type="text"
+              className="form-field "
+              id="inputEmail4"
+              name="first_name"
+              placeholder="First Name"
+            />
+          </div>
+          <div className="form-group col-md-4 col-sm-12 col-lg-4 col-12">
+            <input
+              type="text"
+              className="form-field"
+              id="inputPassword4"
+              name="last_name"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+      </div>
 
-    </div>
+      <div className="form-row row">
+        <div class="form-group col-md-4 col-sm-12 col-lg-4 col-12">
+          <input
+            type="email"
+            className="form-field"
+            id="inputEmail4"
+            name="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <div className="form-group col-md-4 col-sm-12 col-lg-4 col-12">
+          <input
+            type="text"
+            className="form-field"
+            name="company"
+            id="inputPassword4"
+            placeholder="Company(Optional)"
+          />
+        </div>
+      </div>
+
+      <div className="form-row row">
+        <div className="form-group col-md-8">
+          <textarea
+            className="form-comment"
+            name="message"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Comment"
+            style={height}
+          ></textarea>
+        </div>
+      </div>
+      <input type="submit" className="btn" Submit />
+
+      <div style={styles} className="thankyou_message">
+        <p>Thanks for contacting!</p>
+      </div>
+    </form>
   );
 }
 
