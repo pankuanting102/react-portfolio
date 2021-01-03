@@ -22,5 +22,9 @@ https://github.com/pankuanting102/react-portfolio
 https://ktp-protfolio.herokuapp.com/
 
 <br><div style="width: 90vw; margin: auto; border: 1px black solid">
-<img src="https://github.com/pankuanting102/employee-directory/blob/master/public/asset/demo.gif?raw=true">
+<img src="https://github.com/pankuanting102/react-portfolio/blob/master/src/components/Assets/Screen%20Shot%202021-01-02%20at%205.20.23%20PM.png?raw=true">
+</div>
+
+<br><div style="width: 90vw; margin: auto; border: 1px black solid">
+<img src="https://github.com/pankuanting102/react-portfolio/blob/master/src/components/Assets/Screen%20Shot%202021-01-02%20at%205.20.44%20PM.png?raw=true">
 </div>
